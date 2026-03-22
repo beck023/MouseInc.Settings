@@ -48,9 +48,11 @@ export default defineConfig({
     cssCodeSplit: false, // 禁用 CSS 拆分
     rollupOptions: {
       output: {
-        // 简化分包逻辑，减少文件数量
-        manualChunks: {
-          'vendor': ['vue', 'vue-router', 'vuex', 'vue-i18n', 'element-plus', 'js-beautify', 'clipboard', 'jsonrepair']
+        // Keep a stable vendor chunk on newer Vite/Rolldown.
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor'
+          }
         },
         // 重新添加 [hash] 以解决缓存和版本控制问题
         entryFileNames: '[name]-[hash].js',
