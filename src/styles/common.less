@@ -89,27 +89,27 @@
     border-color: rgba(56, 139, 253, 0.15) !important;
     background: rgba(56, 139, 253, 0.03) !important;
     
-    :deep(.el-alert__icon) {
+    .el-alert__icon {
       color: #3d76b3; 
     }
     
-    :deep(.el-alert__title) {
+    .el-alert__title {
       color: #8b949e; 
     }
   }
 
-  :deep(.el-alert__icon) {
+  .el-alert__icon {
     color: var(--accent-blue);
     font-size: 18px;
     margin-right: 12px;
   }
 
-  :deep(.el-alert__content) {
+  .el-alert__content {
     display: flex;
     align-items: center;
   }
 
-  :deep(.el-alert__title) {
+  .el-alert__title {
     color: var(--text-primary);
     font-size: 14px;
     line-height: 1.5;
@@ -124,12 +124,12 @@
       border-color: rgba(63, 185, 80, 0.15) !important;
       background: rgba(63, 185, 80, 0.03) !important;
       
-      :deep(.el-alert__icon) {
+      .el-alert__icon {
         color: #2ea043;
       }
     }
     
-    :deep(.el-alert__icon) {
+    .el-alert__icon {
       color: var(--accent-green);
     }
   }
@@ -142,12 +142,12 @@
       border-color: rgba(187, 128, 9, 0.15) !important;
       background: rgba(187, 128, 9, 0.03) !important;
       
-      :deep(.el-alert__icon) {
+      .el-alert__icon {
         color: #9e7a10;
       }
     }
     
-    :deep(.el-alert__icon) {
+    .el-alert__icon {
       color: var(--accent-orange);
     }
   }
@@ -160,12 +160,12 @@
       border-color: rgba(248, 81, 73, 0.15) !important;
       background: rgba(248, 81, 73, 0.03) !important;
       
-      :deep(.el-alert__icon) {
+      .el-alert__icon {
         color: #da3633;
       }
     }
     
-    :deep(.el-alert__icon) {
+    .el-alert__icon {
       color: var(--accent-red);
     }
   }
@@ -182,7 +182,7 @@
   overflow-x: auto;
   
   // 确保表格容器可以横向滚动，固定列才能正常工作
-  :deep(.el-table) {
+  .el-table {
     min-width: 100%;
   }
 }
@@ -198,16 +198,16 @@
   background-color: var(--bg-card);
 
   // 斑马线样式
-  :deep(.el-table--striped .el-table__body tr.el-table__row--striped td) {
+  .el-table--striped .el-table__body tr.el-table__row--striped td {
     background-color: var(--bg-tertiary);
   }
 
   // 斑马线 + 悬停
-  :deep(.el-table--striped .el-table__body tr.el-table__row--striped:hover td) {
+  .el-table--striped .el-table__body tr.el-table__row--striped:hover td {
     background-color: var(--bg-hover);
   }
 
-  :deep(.el-table__header) {
+  .el-table__header {
     th {
       background: var(--bg-tertiary);
       color: var(--text-secondary);
@@ -220,7 +220,7 @@
     }
   }
 
-  :deep(.el-table__row) {
+  .el-table__row {
     transition: all 0.2s ease;
 
     // 只给非固定列单元格添加悬停效果
@@ -251,7 +251,7 @@
 // ============================================
 // 对话框样式
 // ============================================
-:deep(.modern-dialog) {
+.modern-dialog {
   .el-dialog {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -280,7 +280,7 @@
 }
 
 .dialog-body {
-  :deep(.el-form-item__label) {
+  .el-form-item__label {
     color: var(--text-secondary);
     font-weight: 500;
     padding-bottom: 8px;
@@ -328,7 +328,7 @@
     padding: 0;
     overflow: hidden;
 
-    :deep(.el-collapse) {
+    .el-collapse {
       border: none;
 
       .el-collapse-item {
@@ -472,7 +472,7 @@
     margin-bottom: 8px;
   }
 
-  :deep(.el-select) {
+  .el-select {
     width: 100%;
 
     .el-input__wrapper {
@@ -618,7 +618,7 @@
   }
 }
 
-:deep(.el-slider__marks-text) {
+.el-slider__marks-text {
   font-size: 12px;
   color: var(--text-muted);
 }
@@ -732,7 +732,7 @@
   width: 100%;
   margin-right: 0;
   
-  :deep(.el-form-item__content) {
+  .el-form-item__content {
     width: 100%;
   }
 }
@@ -861,7 +861,7 @@
 }
 
 .custom-tabs {
-  :deep(.el-tabs__header) {
+  .el-tabs__header {
     background: var(--bg-tertiary);
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 0;
@@ -892,7 +892,7 @@
     }
   }
 
-  :deep(.el-tabs__content) {
+  .el-tabs__content {
     padding: 20px;
   }
 }
@@ -1160,7 +1160,7 @@
 }
 
 .lang-tabs {
-  :deep(.el-tabs__header) {
+  .el-tabs__header {
     background: var(--bg-tertiary);
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 0;
@@ -1191,7 +1191,7 @@
     }
   }
 
-  :deep(.el-tabs__content) {
+  .el-tabs__content {
     padding: 0;
   }
 }
@@ -1284,7 +1284,7 @@
 .modern-alert.warning {
   background: rgba(250, 173, 20, 0.1);
   
-  :deep(.el-alert__icon) {
+  .el-alert__icon {
     color: var(--accent-orange);
   }
 }
